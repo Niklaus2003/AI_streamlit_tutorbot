@@ -1,82 +1,79 @@
 🧠 AI Tutor App
 
-An interactive learning assistant powered by LangChain, Groq LLaMA 3.1, and Streamlit.
-This AI Tutor can explain academic concepts, generate quizzes, track progress, and even remember past questions to provide context-aware learning — making studying more personalized and engaging.
+AI-powered interactive learning assistant built with LangChain, Groq LLaMA 3.1, and Streamlit. This app allows students to ask academic questions, take quizzes, and track their learning progress in a conversational and intelligent interface.
 
-🚀 Features
+Features
 
-💬 Concept Explainer – Ask any academic question and get detailed, AI-generated explanations.
+📘 Concept Explainer – Ask any academic question; the AI provides clear, easy-to-understand explanations.
 
-🧩 Smart Quiz Generator – Creates unique multiple-choice quizzes on any topic.
+🎯 Quiz Generator – Dynamically generates multiple-choice quizzes with instant feedback, explanations, and relevant YouTube help links.
 
-📈 Progress Tracker – Saves and displays your quiz history, scores, and timestamps.
+🧩 Conversational Memory – Uses LangChain ConversationBufferMemory to remember past interactions, enabling follow-up questions.
 
-🧠 Conversational Memory – Uses LangChain memory to handle follow-up questions seamlessly.
+📊 Progress Tracker – Saves quiz scores, topics, and timestamps locally for monitoring learning progress.
 
-🔍 YouTube Help Links – Auto-suggests relevant beginner-friendly YouTube resources for each question.
+🌐 Streamlit Interface – Clean, user-friendly interface with modes: Ask a Question, Take a Quiz, and View Progress.
 
-🧰 Tech Stack
+🔒 Local Data Storage – All quiz progress is stored in a JSON file; no external database required.
 
-LangChain – for prompt management and conversational memory
+Tech Stack
 
-Groq LLaMA 3.1 (8B-Instant) – for intelligent response generation
+Python
 
-Streamlit – for the interactive web interface
+Streamlit
 
-Python – as the core programming language
+LangChain
 
-JSON – for storing quiz progress and history
+Groq LLaMA 3.1
 
-⚙️ Setup Instructions
+JSON-based progress tracking
 
-Clone the repository
+Installation
 
-git clone https://github.com/yourusername/ai-tutor-app.git
-cd ai-tutor-app
+Clone the repository:
 
-
-Install dependencies
-
-pip install -r requirements.txt
+git clone https://github.com/Niklaus2003/AI_streamlit_tutorbot.git
 
 
-Add your Groq API key
-Create a .env file in the project directory and add:
+Navigate into the project folder and install dependencies:
 
-GROQ_API_KEY=your_api_key_here
+cd AI_streamlit_tutorbot
 
+Usage
 
-Run the app
+Run the app with:
 
 streamlit run app.py
 
-🧑‍🏫 How It Works
 
-The app starts by asking your name to personalize your learning experience.
+Enter your name to begin.
 
-You can ask questions, take quizzes, or view progress from the sidebar.
+Choose a mode from the sidebar: Ask a Question, Take a Quiz, or View Progress.
 
-The AI dynamically generates quizzes with explanations and YouTube help links.
+For quizzes, enter a topic and number of questions.
 
-All your quiz data is saved locally in progress.json.
+Ask academic questions to get detailed explanations, including follow-up questions remembered by the AI.
 
-🏅 Learning Outcomes
+Your progress is automatically saved locally and displayed in the View Progress section.
 
-Hands-on experience with LLM integration using LangChain
+Notes
 
-Implementation of conversational memory in real-world learning apps
+Set your Groq API key in .env as GROQ_API_KEY.
 
-Combining AI reasoning, education, and data tracking in a single Streamlit interface
+Quiz questions are generated dynamically using LangChain + LLaMA, ensuring unique and diverse content.
 
-💡 Future Enhancements
+Explanations can be followed by YouTube tutorials for enhanced learning.
 
-Add leaderboards and performance analytics
+Future Enhancements
 
-Support for subject-based adaptive quizzes
+🌐 Multilingual Support – AI explanations and quizzes in multiple languages.
 
-Integration with speech-to-text and text-to-speech for voice-based tutoring
+☁️ Cloud Sync – Store user progress in cloud for cross-device access.
 
-📜 License
+📱 Mobile-Friendly UI – Optimize Streamlit interface for mobile devices.
 
-This project is open-source and available under the MIT License
-.
+🤖 Adaptive Quizzes – Adjust quiz difficulty based on user performance.
+
+📝 Custom Topics & Subjects – Allow users to create quizzes for specific subjects or chapters.
+
+🎧 Voice Integration – Enable voice input and TTS for hands-free interaction.
