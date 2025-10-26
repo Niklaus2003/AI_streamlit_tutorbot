@@ -1,79 +1,104 @@
-🧠 AI Tutor App
+<h1 align="center">🧠 AI Tutor App</h1>
+<p align="center">
+  <i>An interactive AI-powered learning assistant built with <b>LangChain</b>, <b>Groq LLaMA 3.1</b>, and <b>Streamlit</b>.</i><br>
+  Ask questions, take quizzes, and track your learning progress — all in one intelligent interface.
+</p>
 
-AI-powered interactive learning assistant built with LangChain, Groq LLaMA 3.1, and Streamlit. This app allows students to ask academic questions, take quizzes, and track their learning progress in a conversational and intelligent interface.
+<hr>
 
-Features
+<h2>✨ Overview</h2>
+<p>
+  The <b>AI Tutor App</b> transforms learning into an interactive experience. Using conversational memory, the AI can explain academic concepts, generate topic-based quizzes, and track user performance over time — all locally stored for privacy.
+</p>
 
-📘 Concept Explainer – Ask any academic question; the AI provides clear, easy-to-understand explanations.
+<hr>
 
-🎯 Quiz Generator – Dynamically generates multiple-choice quizzes with instant feedback, explanations, and relevant YouTube help links.
+<details open>
+  <summary><h2>🚀 Features</h2></summary>
 
-🧩 Conversational Memory – Uses LangChain ConversationBufferMemory to remember past interactions, enabling follow-up questions.
+  <ul>
+    <li>📘 <b>Concept Explainer</b> – Ask any academic question; the AI provides clear, easy-to-understand explanations.</li>
+    <li>🎯 <b>Quiz Generator</b> – Dynamically creates multiple-choice quizzes with instant feedback, explanations, and relevant YouTube help links.</li>
+    <li>🧩 <b>Conversational Memory</b> – Uses <b>LangChain ConversationBufferMemory</b> to remember past interactions and answer follow-up questions naturally.</li>
+    <li>📊 <b>Progress Tracker</b> – Saves quiz scores, topics, and timestamps locally for learning analysis.</li>
+    <li>🌐 <b>Streamlit Interface</b> – Minimal and user-friendly interface with modes: <b>Ask a Question</b>, <b>Take a Quiz</b>, and <b>View Progress</b>.</li>
+    <li>🔒 <b>Local Data Storage</b> – Stores all progress in a JSON file without needing external databases.</li>
+  </ul>
+</details>
 
-📊 Progress Tracker – Saves quiz scores, topics, and timestamps locally for monitoring learning progress.
+<hr>
 
-🌐 Streamlit Interface – Clean, user-friendly interface with modes: Ask a Question, Take a Quiz, and View Progress.
+<details open>
+  <summary><h2>🧠 Tech Stack</h2></summary>
 
-🔒 Local Data Storage – All quiz progress is stored in a JSON file; no external database required.
+  <ul>
+    <li>🐍 Python</li>
+    <li>⚡ Streamlit</li>
+    <li>🧩 LangChain</li>
+    <li>🤖 Groq LLaMA 3.1</li>
+    <li>🗂️ JSON-based progress tracking</li>
+  </ul>
+</details>
 
-Tech Stack
+<hr>
 
-Python
+<details open>
+  <summary><h2>⚙️ Installation</h2></summary>
 
-Streamlit
+  <p><b>1️⃣ Clone the repository:</b></p>
+  <pre><code>git clone https://github.com/Niklaus2003/AI_streamlit_tutorbot.git</code></pre>
 
-LangChain
+  <p><b>2️⃣ Navigate into the project folder and install dependencies:</b></p>
+  <pre><code>cd AI_streamlit_tutorbot
+pip install -r requirements.txt</code></pre>
+</details>
 
-Groq LLaMA 3.1
+<hr>
 
-JSON-based progress tracking
+<details open>
+  <summary><h2>💻 Usage</h2></summary>
 
-Installation
+  <p><b>Run the app:</b></p>
+  <pre><code>streamlit run app.py</code></pre>
 
-Clone the repository:
+  <ul>
+    <li>Enter your name to begin.</li>
+    <li>Select a mode: <b>Ask a Question</b>, <b>Take a Quiz</b>, or <b>View Progress</b>.</li>
+    <li>Enter a topic and number of questions for quizzes.</li>
+    <li>Ask academic questions for detailed explanations — follow-ups are remembered by the AI.</li>
+    <li>All progress is saved locally and displayed in <b>View Progress</b>.</li>
+  </ul>
+</details>
 
-git clone https://github.com/Niklaus2003/AI_streamlit_tutorbot.git
+<hr>
 
+<details open>
+  <summary><h2>📝 Notes</h2></summary>
 
-Navigate into the project folder and install dependencies:
+  <ul>
+    <li>Set your <code>GROQ_API_KEY</code> in a <b>.env</b> file before running.</li>
+    <li>Quizzes are dynamically generated using <b>LangChain</b> + <b>LLaMA 3.1</b>.</li>
+    <li>Explanations include YouTube tutorial links for deeper learning.</li>
+  </ul>
+</details>
 
-cd AI_streamlit_tutorbot
+<hr>
 
-Usage
+<details open>
+  <summary><h2>🌟 Future Enhancements</h2></summary>
 
-Run the app with:
+  <ul>
+    <li>🌐 <b>Multilingual Support</b> – Enable AI explanations and quizzes in multiple languages.</li>
+    <li>☁️ <b>Cloud Sync</b> – Store progress in the cloud for access across devices.</li>
+    <li>📱 <b>Mobile-Friendly UI</b> – Optimize Streamlit interface for smaller screens.</li>
+    <li>🤖 <b>Adaptive Quizzes</b> – Auto-adjust difficulty based on user performance.</li>
+    <li>📝 <b>Custom Topics</b> – Allow personalized subject- or chapter-based quiz creation.</li>
+    <li>🎧 <b>Voice Integration</b> – Add speech recognition and text-to-speech for hands-free learning.</li>
+  </ul>
+</details>
 
-streamlit run app.py
+<hr>
 
-
-Enter your name to begin.
-
-Choose a mode from the sidebar: Ask a Question, Take a Quiz, or View Progress.
-
-For quizzes, enter a topic and number of questions.
-
-Ask academic questions to get detailed explanations, including follow-up questions remembered by the AI.
-
-Your progress is automatically saved locally and displayed in the View Progress section.
-
-Notes
-
-Set your Groq API key in .env as GROQ_API_KEY.
-
-Quiz questions are generated dynamically using LangChain + LLaMA, ensuring unique and diverse content.
-
-Explanations can be followed by YouTube tutorials for enhanced learning.
-
-Future Enhancements
-
-🌐 Multilingual Support – AI explanations and quizzes in multiple languages.
-
-☁️ Cloud Sync – Store user progress in cloud for cross-device access.
-
-📱 Mobile-Friendly UI – Optimize Streamlit interface for mobile devices.
-
-🤖 Adaptive Quizzes – Adjust quiz difficulty based on user performance.
-
-📝 Custom Topics & Subjects – Allow users to create quizzes for specific subjects or chapters.
-
-🎧 Voice Integration – Enable voice input and TTS for hands-free interaction.
+<p align="center">
+  🔗 <a href="https://github.com/Niklaus2003/AI_streamlit_tutorbot" target="_blank"><b>View Project on GitHub</b></a>
+</p>
